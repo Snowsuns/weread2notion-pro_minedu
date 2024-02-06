@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/30 0-1 * * *"
-    - cron: "*/180 2,10 * * *"
-    - cron: "*/90 11,23 * * *"
+    - cron: "*/180 2-10 * * *"
+    - cron: "*/90 11-23 * * *"
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
